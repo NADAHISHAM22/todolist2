@@ -1,0 +1,32 @@
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+
+<body></body>
+
+<div id ="container">
+
+    <form>
+        <!-- <input type="text" id ="newtask" placeholder="write your task" [(ngModel)]="temp"> -->
+        <input type="text" id ="newtask" placeholder="write your task" [(ngModel)]="temp"  #myTitle (keyup)="keyup(myTitle.value)">
+        <button id ="add" ><span><i (click)="addData()" class="fa-solid fa-plus"></i></span></button> 
+    </form>
+    
+    <h3 id ="todolist"><i>To Do List</i></h3>
+    
+      <div id ="todo" *ngIf="formData.length>0 ">
+        <div class="task" *ngFor="let goal of formData" [ngClass]="{'finish':goal.status}" >
+            <button class="delete" ><i class="fa-solid fa-trash" (click)="Delete(goal)"></i></button>
+            <button class="done"><i class="fa-regular fa-circle-check" (click)="clickEvent(goal)"  
+            ></i></button> {{goal.data}}
+         </div>
+    </div> 
+        
+     
+       <div id ="finish">  
+      <h3 id="finished"><i>finished</i></h3>     
+        </div> 
+    
+  </div>
+  <body></body>

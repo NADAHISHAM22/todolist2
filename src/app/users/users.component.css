@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#container{
+    padding-top: 28px;
+    width: 760px;
+    height: 600px;
+    background-color: #ece7e0;
+    margin-left: 362px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+button{
+   
+    border-style: none;
+    background-color:transparent;
+    text-align: center;
+}
+
+form{
+    margin-left:208px;
+    width:400px;
+    height: 50px;
+}
+input{
+    border-style: none;
+    width:300px;
+    height: 30px;
+    padding:10px ;
+    border-radius:10px ;
+}
+#add i {
+    color:#d67171;
+    font-size:20px;
+    margin-top: 10px;
+    position: relative;
+    top:3px
+
+}
+
+#container .task {
+   /* height: 55px;
+    width:500px; */
+    padding-left: 10px;
+    background-color: transparent;
+    margin:auto;
+    margin-top: 20px;
+    position: relative;
+    left: 14%;
+    border-bottom-style:solid ;
+    border-bottom-width:2px ;
+    border-bottom-color: #b6b5df ;
+}
+
+ #add i:active{
+    color:darkgrey;
+}
+
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    color:cadetblue
+}
+
+#finished {
+    display: none;
+}
+
+.task i{
+    color:#d67171;
+    font-size:20px;
+    margin-top: 10px;
+    top:3px;
+}
+.finish{
+    text-decoration: line-through;
+    color:#b6b5df
+}
+
+
+.delete{
+  position: relative;
+    left:80%;
+    top:6px;
+   
+}
+#edit{
+    position: relative;
+    left:80%;
+    top:6px; 
+}
+#edit i{
+color:#6363a8;
+}
+.done i {
+    color:#789b78 !important;
+}
+
+.done i:active{
+    color: gray;
+}
+.delete i:active{
+    color: gray;
+}
+#edit i:active{
+    color: gray;
+}
+#todo{
+    width:70%;
+    height: 32%;
+}
